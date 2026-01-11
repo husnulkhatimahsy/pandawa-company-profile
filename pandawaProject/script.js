@@ -28,6 +28,15 @@ if (navToggle && navMenu) {
   });
 }
 
+const topbar = document.querySelector(".topbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    topbar.classList.add("scrolled");
+  } else {
+    topbar.classList.remove("scrolled");
+  }
+});
 
 // ===== SIMPLE SLIDER (Fokus Layanan) =====
 const track = document.getElementById("sliderTrack");
@@ -110,4 +119,66 @@ if (heroSlides.length > 1) {
     heroIndex = (heroIndex + 1) % heroSlides.length;
     heroSlides[heroIndex].classList.add("active");
   }, heroInterval);
+}
+
+// ===== GALERI SLIDER =====
+const gTrack = document.getElementById("galleryTrack");
+const gPrev  = document.getElementById("galleryPrev");
+const gNext  = document.getElementById("galleryNext");
+const gDots  = document.getElementById("galleryDots");
+
+if(gTrack){
+  const cardWidth = 284;
+
+  gPrev.onclick = () => gTrack.scrollBy({ left:-cardWidth, behavior:"smooth" });
+  gNext.onclick = () => gTrack.scrollBy({ left: cardWidth, behavior:"smooth" });
+}
+
+// ===== MOBILE SEARCH TOGGLE =====
+const searchToggle = document.getElementById("searchToggle");
+const mobileSearch = document.querySelector(".mobile-search");
+
+if(searchToggle && mobileSearch){
+  searchToggle.addEventListener("click", () => {
+    mobileSearch.classList.toggle("active");
+    const input = mobileSearch.querySelector("input");
+    if(mobileSearch.classList.contains("active")){
+      input.focus();
+    }
+  });
+
+  mobileSearch.querySelector("input").addEventListener("blur", () => {
+    mobileSearch.classList.remove("active");
+  });
+}
+
+if (gTrack && gDots) {
+  const cards = gTrack.querySelectorAll(".gallery-card");
+  gDots.innerHTML = "";
+
+  cards.forEach((_, index) => {
+    const dot = document.createElement("div");
+    dot.className = "dot" + (index === 0 ? " active" : "");
+
+    dot.addEventListener("click", () => {
+      gTrack.scrollTo({
+        left: index * 284,
+        behavior: "smooth"
+      });
+      setActiveGalleryDot(index);
+    });
+
+    gDots.appendChild(dot);
+  });
+
+  function setActiveGalleryDot(i) {
+    gDots.querySelectorAll(".dot").forEach((d, idx) => {
+      d.classList.toggle("active", idx === i);
+    });
+  }
+
+  gTrack.addEventListener("scroll", () => {
+    const idx = Math.round(gTrack.scrollLeft / 284);
+    setActiveGalleryDot(idx);
+  });
 }
