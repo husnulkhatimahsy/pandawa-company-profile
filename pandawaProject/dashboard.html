@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Pandawa Indonesia Cipta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="PT Pandawa Indonesia Cipta">
+        <img src="assets/LOGO.png" alt="Logo PT Pandawa Indonesia Cipta" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li class="menu-close">
+            <button id="menuClose" aria-label="Tutup menu">✕</button>
+          </li>
+          <li><a class="active" href="index.html">BERANDA</a></li>
+          <li><a href="tentang.html">TENTANG KAMI</a></li>
+          <li><a href="produk.html">PRODUK &amp; LAYANAN</a></li>
+          <li><a href="kontak.html">KONTAK KAMI</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-search">
+        <input type="text" placeholder="Pencarian" aria-label="Pencarian">
+        <button class="search-btn" aria-label="Cari">
+          <img src="assets/search.png" alt="Cari">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+  <!-- background slides -->
+    <div class="hero-bg active" style="background-image:url('assets/hero-1.png')"></div>
+    <div class="hero-bg" style="background-image:url('assets/hero-2.jpeg')"></div>
+    <div class="hero-bg" style="background-image:url('assets/hero-3.jpeg')"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-inner">
+      <h1>INOVATIF &amp; TERINTEGRASI DALAM SOLUSI TI</h1>
+      <p>
+        Solusi Teknologi Informasi, Survei, dan Pengembangan Aplikasi GIS untuk
+        mendukung pengelolaan data yang akurat dan terintegrasi.
+      </p>
+      <a href="produk.html" class="btn btn-primary">Lihat Selengkapnya</a>
+    </div>
+
+    <div class="hero-slant"></div>
+  </section>
+
+
+  <!-- SECTION: PROFIL SINGKAT -->
+  <section class="section">
+    <div class="container two-col">
+      <div class="col">
+        <h2 class="title">
+          Solusi Terintegrasi untuk Teknologi Informasi &amp; Survei
+        </h2>
+        <p class="muted">
+          PT Pandawa Indonesia Cipta menyediakan barang dan jasa di bidang Teknologi Informasi
+          dan Survei, meliputi pengadaan perangkat keras dan perangkat lunak, serta layanan
+          pengolahan data.
+        </p>
+      </div>
+
+      <div class="col center">
+        <img class="img-soft" src="assets/illustration-1.png" alt="Ilustrasi solusi terintegrasi">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: FOKUS LAYANAN (SLIDER) -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Fokus Layanan Kami</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="slider">
+        <button class="slider-btn" id="prevBtn" aria-label="Sebelumnya">‹</button>
+
+        <div class="slider-track" id="sliderTrack">
+          <article class="service-card is-green">
+            <div class="service-icon">🖥️</div>
+            <h3>Pengadaan<br>Hardware &amp; Software</h3>
+          </article>
+
+          <article class="service-card is-gray">
+            <div class="service-icon">🗄️</div>
+            <h3>Data Cleansing<br>&amp; Data Migration</h3>
+          </article>
+
+          <article class="service-card is-green">
+            <div class="service-icon">🗺️</div>
+            <h3>Layanan<br>Survei &amp; Pengolahan Data</h3>
+          </article>
+
+          <article class="service-card is-gray">
+            <div class="service-icon">⚙️</div>
+            <h3>Layanan<br>IT &amp; Pendukung</h3>
+          </article>
+        </div>
+
+        <button class="slider-btn" id="nextBtn" aria-label="Berikutnya">›</button>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Indikator slider"></div>
+    </div>
+  </section>
+
+  <!-- SECTION: MENGAPA MEMILIH -->
+  <section class="section section-why">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Mengapa Memilih PT Pandawa Indonesia Cipta?</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="two-col why-wrap">
+        <div class="col center">
+          <img class="img-soft" src="assets/illustration-2.png" alt="Ilustrasi rapat dan analisis">
+        </div>
+
+        <div class="col why-list">
+          <div class="why-item">
+            <h3>Integrasi Data dan Lapangan</h3>
+            <p class="muted">
+              Kami mengintegrasikan hasil survei lapangan dengan sistem informasi dan pengolahan data,
+              sehingga data yang dihasilkan konsisten, akurat, dan siap digunakan.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>Proses Terstandar dan Terdokumentasi</h3>
+            <p class="muted">
+              Setiap pekerjaan dilakukan melalui proses yang terukur, terdokumentasi, dan sesuai standar,
+              mulai dari pengumpulan data hingga validasi dan pemutakhiran.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>Dukungan Teknologi yang Tepat Guna</h3>
+            <p class="muted">
+              Kami menyediakan dan memanfaatkan perangkat keras, perangkat lunak, dan sistem berbasis GIS
+              untuk mendukung pengelolaan data dan pengambilan keputusan yang lebih efektif.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>Komitmen terhadap Akurasi dan Keandalan Data</h3>
+            <p class="muted">
+              Kami menempatkan kualitas dan keamanan data sebagai prioritas utama untuk memastikan hasil kerja
+              yang dapat diandalkan dan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Kolom 1 -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/LOGO.png" alt="Logo PT Pandawa Indonesia Cipta">
+        </div>
+        <h3>PT PANDAWA INDONESIA CIPTA</h3>
+        <p class="footer-muted">
+          Solusi Teknologi Informasi, Survei, dan Pengembangan Aplikasi GIS untuk mendukung pengelolaan
+          data yang akurat dan terintegrasi.
+        </p>
+
+        <div class="social">
+          <!-- EMAIL -->
+          <a href="mailto:info@pandawaindonesiacipta.com" aria-label="Email" class="social-link">
+            <img src="assets/email.png" alt="Email">
+          </a>
+
+          <!-- TELEPON -->
+          <a href="tel:+6281234567890" aria-label="Telepon" class="social-link">
+            <img src="assets/phone.png" alt="Telepon">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Kolom 2 -->
+      <div class="footer-links">
+        <h4>PERUSAHAAN</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Produk &amp; Layanan</a></li>
+          <li><a href="kontak.html">Kontak Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3 -->
+      <div class="footer-address">
+        <h4>ADDRESS</h4>
+        <p class="footer-muted">
+          Mulyorejo Residence A-12, RT. 009, RW. 003,<br>
+          Kel. Mulyorejo, Kec. Sukun, Jawa Timur, 65147
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright © PT PANDAWA INDONESIA CIPTA 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
