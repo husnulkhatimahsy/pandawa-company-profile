@@ -702,7 +702,7 @@ a{text-decoration:none; color:inherit}
 .contact-grid{
   display:grid;
   grid-template-columns: .9fr 1.1fr;
-  gap:35px;
+  gap:48px;
   align-items:start;
 }
 
@@ -739,6 +739,10 @@ a{text-decoration:none; color:inherit}
   width:100%;
   height:200px;
   border:0;
+}
+
+.contact-page .section-head{
+  margin-bottom: 24px; /* dari 48px → 24px */
 }
 
 /* FORM */
