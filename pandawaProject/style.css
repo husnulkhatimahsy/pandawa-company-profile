@@ -394,6 +394,21 @@ a{text-decoration:none; color:inherit}
   box-shadow:0 14px 30px rgba(0,0,0,.35);
 }
 
+/* SAMAKAN BUTTON DENGAN LINK .btn */
+button.btn{
+  background: var(--accent);
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: inherit;
+}
+
+/* HILANGKAN FOCUS RING BAWAAN, PAKAI STYLE SENDIRI */
+button.btn:focus,
+button.btn:focus-visible{
+  outline: none;
+}
+
 /* ===== SECTION BASE ===== */
 .section{padding:64px 0}
 .section-soft{background:#fff}
@@ -477,7 +492,6 @@ a{text-decoration:none; color:inherit}
   transform: scale(0.96);
 }
 
-
 .slider-track{
   overflow:hidden;
   display:flex;
@@ -536,7 +550,7 @@ a{text-decoration:none; color:inherit}
   background:var(--navy);
 }
 
-/* ===== WHY CHOOSE (sesuai UI) ===== */
+/* ===== WHY CHOOSE ===== */
 .section-why{
   background: var(--soft-green);
 }
@@ -699,6 +713,14 @@ a{text-decoration:none; color:inherit}
 }
 
 /* ===== CONTACT PAGE ===== */
+.section-contact-head .section-head{
+  margin-bottom: 12px; /* lebih rapat */
+}
+
+.section-contact{
+  padding-top: 0px;
+}
+
 .contact-grid{
   display:grid;
   grid-template-columns: .9fr 1.1fr;
