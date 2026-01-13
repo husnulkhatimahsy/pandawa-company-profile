@@ -702,7 +702,7 @@ a{text-decoration:none; color:inherit}
 .contact-grid{
   display:grid;
   grid-template-columns: .9fr 1.1fr;
-  gap:48px;
+  gap:35px;
   align-items:start;
 }
 
