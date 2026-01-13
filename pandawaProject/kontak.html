@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami | PT Pandawa Indonesia Cipta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="dashboard.html">
+      <img src="assets/LOGO.png" alt="Logo" class="brand-logo">
+    </a>
+
+    <nav class="nav">
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="menu-close"><button id="menuClose">✕</button></li>
+        <li><a href="dashboard.html">BERANDA</a></li>
+        <li><a href="tentang.html">TENTANG KAMI</a></li>
+        <li><a href="produk.html">PRODUK &amp; LAYANAN</a></li>
+        <li><a href="kontak.html" class="active">KONTAK KAMI</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-search mobile-search">
+      <input type="text" placeholder="Pencarian">
+      <button class="search-btn" id="searchToggle">
+        <img src="assets/search.png" alt="Cari">
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Kontak Kami</h2>
+      <div class="section-underline"></div>
+      <p class="muted" style="text-align:center; max-width:600px; margin:20px auto 0">
+        Ada pertanyaan atau komentar? Silakan kirim pesan kepada kami!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container contact-grid">
+
+    <!-- LEFT -->
+    <div class="contact-info">
+      <h3>Informasi Kontak</h3>
+
+      <ul class="contact-list">
+        <li>📞 +62 852-3648-9539</li>
+        <li>✉️ marketing@pandawaindonesiacipta.com</li>
+        <li>📍 Mulyorejo Residence A-12, RT.009, RW.003,<br>
+            Kel. Mulyorejo, Kec. Sukun, Jawa Timur, 65147
+        </li>
+      </ul>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=Mulyorejo%20Residence%20A-12&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama Depan</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Nama Belakang</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email">
+          </div>
+          <div class="form-group">
+            <label>No. Telepon</label>
+            <input type="tel">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea rows="4" placeholder="Write your message.."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Kirim Pesan
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/LOGO.png" width="60">
+      <h3>PT PANDAWA INDONESIA CIPTA</h3>
+      <p class="footer-muted">
+        Solusi Teknologi Informasi, Survei, dan Pengembangan Aplikasi GIS.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>PERUSAHAAN</h4>
+      <ul>
+        <li><a href="dashboard.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk &amp; Layanan</a></li>
+        <li><a href="kontak.html">Kontak Kami</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-address">
+      <h4>ALAMAT</h4>
+      <p class="footer-muted">
+        Mulyorejo Residence A-12, RT.009, RW.003,<br>
+        Jawa Timur, 65147
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright © PT PANDAWA INDONESIA CIPTA 2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
